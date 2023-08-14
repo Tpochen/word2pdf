@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传 Word 文件</title>
+</head>
+<body>
+    <h1>上传 Word 文件</h1>
+    <form action="{% url 'convert' %}" method="post" enctype="multipart/form-data">
+        <input type="file" name="word_file" accept=".docx">
+        <button type="submit">上传并转换为 PDF</button>
+    </form>
+</body>
+</html>
